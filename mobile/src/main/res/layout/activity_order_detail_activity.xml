@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvOrderNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvAppointmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvReAppointmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvF_nameOrH_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvM_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tvMobileNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+</layout>

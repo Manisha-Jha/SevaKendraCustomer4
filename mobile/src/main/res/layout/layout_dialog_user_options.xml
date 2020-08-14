@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Select Options"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_20"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvTaskList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginStart="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_20"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:background="@color/colorBackground"
+        android:text="Orders/Requests"/>
+
+    <TextView
+        android:id="@+id/tvTaskListHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginStart="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:background="@color/colorBackground"
+        android:text="Task History (Map)"/>
+
+        <TextView
+            android:id="@+id/tvCompletedTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/colorBackground"
+            android:visibility="gone"
+            android:text="Completed Tasks"/>
+
+    <TextView
+        android:id="@+id/tvTrackHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginStart="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_20"
+        android:textColor="@android:color/white"
+        android:background="@color/colorBackground"
+        android:text="Live Tracking"/>
+    </LinearLayout>
+</LinearLayout>

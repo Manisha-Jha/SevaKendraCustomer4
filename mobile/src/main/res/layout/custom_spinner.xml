@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/spinner_main">
+
+    <ImageView
+        android:id="@+id/left_pic"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:foregroundGravity="center"
+        android:padding="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/spinner_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/left_pic">
+
+    <TextView
+        android:id="@+id/text_main_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="3px"
+        android:padding="4px"
+        android:text="JMD Group"
+        android:textColor="@color/charcolBlackLightx"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub_text_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_main_seen"
+        android:layout_marginLeft="9px"
+        android:layout_marginBottom="3dp"
+        android:padding="2px"
+        android:textSize="11dp"
+        android:text="_____________________"
+        android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/extra_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/sub_text_seen"
+            android:textSize="0dp"
+            android:text=""
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner_text"
+        tools:ignore="RtlCompat">
+  <!--  <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/triangle"/>-->
+
+        <ProgressBar
+            android:id="@+id/spinnerProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:progressDrawable="@drawable/greenprogress" />
+     </RelativeLayout>
+
+</RelativeLayout>
+
+    <!--<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:gravity="bottom"
+        android:layout_below="@id/spinner_main"
+        android:background="#BDBDBD"
+        />-->
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_alert_box">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/alert_title_header"
+        android:background="@color/colorPrimary"
+
+        >
+    <ImageView
+        android:id="@+id/msg_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@android:drawable/ic_dialog_email"/>
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:text="title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/msg_logo"
+        android:fontFamily="sans-serif-light"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"/>
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_description"
+        android:layout_margin="20dp"
+        android:text="this is message description"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@+id/alert_title_header"
+        android:layout_width="fill_parent"
+        android:lines="10"
+        android:layout_height="wrap_content"
+        android:textColor="@color/charcolBlack"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/message_description"
+        android:weightSum="1"
+        >
+    <Button
+        android:id="@+id/dialogButtonNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text=" NO "
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_button_alertbox"
+        android:layout_below="@+id/message_description"
+        />
+
+    <Button
+        android:id="@+id/dialogButtonYES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="1dp"
+        android:text=" YES "
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_button_alertbox"
+        android:layout_below="@+id/message_description"
+        />
+    </LinearLayout>
+</RelativeLayout>

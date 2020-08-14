@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="4dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="4dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/ic_info_marker_history"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:paddingBottom="2dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        CardView:cardCornerRadius="2dp"
+        CardView:cardElevation="2dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        CardView:cardPreventCornerOverlap="false"
+        CardView:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="right|end|center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_2"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_latlng_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.7"
+                android:paddingEnd="@dimen/size_4"
+                android:paddingRight="@dimen/size_4"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_submit_datetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_vertical"
+                android:layout_weight="0.3"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

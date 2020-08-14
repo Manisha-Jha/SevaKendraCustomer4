@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bses.dinesh.dsk">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- //2909 -->
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION " />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- External storage for caching. -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dskapplogo"
+        android:label="@string/app_name_title"
+        android:roundIcon="@drawable/dskapplogo"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:node="merge"
+      >
+
+
+
+        <activity
+            android:name="com.bses.dinesh.dsk.sevakendra.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.bses.dinesh.dsk.utils.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+
+        <activity
+            android:name="com.bses.dinesh.dsk.sevakendra.MainActivity"
+            android:theme="@style/AppTheme.Default" >
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.bses.dinesh.dsk.sevakendra.LoginScreen"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <activity
+            android:name="com.bses.dinesh.dsk.sevakendra.ForgetPassword"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name="com.bses.dinesh.dsk.utils.SignatureLayoutActivity"
+            android:theme="@style/AppTheme.Default" >
+        </activity>
+
+
+
+       <!-- //telematics-->
+
+        <activity android:name=".telematics.telematicsapp.SplashScreenActivity"
+            android:label="@string/create_task"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".telematics.telematicsapp.CreateTasksActivity"
+            android:label="@string/create_task"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".telematics.telematicsapp.AssignTasksUserActivity"
+            android:label="@string/tasks"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.AssignTasksActivity"
+            android:label="@string/assign_tasks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telematics.telematicsapp.HistoryTaskListActivity"
+            android:label="@string/history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telematics.telematicsapp.CompletedTasksActivity"
+            android:label="@string/completed_tasks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telematics.telematicsapp.AdminDashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".telematics.telematicsapp.ManagerDashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".telematics.telematicsapp.BaseActivity" />
+        <activity
+            android:name=".telematics.telematicsapp.FieldUserDashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".telematics.telematicsapp.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".telematics.telematicsapp.FieldUserLiveTrackingActivity"
+            android:label="Live Tracking"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".telematics.telematicsapp.OrderListByDivisionActivity"
+            android:label="Orders"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.OrderListByFieldUserActivity"
+            android:label="Orders"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.AllOrderListByUserActivity"
+            android:label="Orders"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.UserListForOrderActivity"
+            android:label="Orders"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.AllUserListForOrderActivity"
+            android:label="Orders"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.UserLocByDivisionActivity"
+            android:label="User Location"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.AllUserListActivity"
+            android:label="User Location"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.UserListByDivisionActivity"
+            android:label="Users"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.DivisionListActivity"
+            android:label="Divisions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telematics.telematicsapp.EditOrderDetailActivity"
+            android:label="Orders Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".telematics.telematicsapp.OrderDetailActivity"
+            android:label="Orders Details"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.FieldUserCurrentLocationActivity"
+            android:label="User Current Location"
+            android:screenOrientation="portrait" />
+
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".telematics.telematicsapp.MapsActivity"
+            android:label="@string/live_tracking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telematics.telematicsapp.HistoryMapsActivity"
+            android:label="@string/history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".telematics.telematicsapp.RegistrationActivity"
+            android:label="@string/add_user"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".telematics.telematicsapp.OrderTestingActivity"
+            android:label="Order Testing"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".telematics.utils.LocationService" />
+        <service
+            android:name=".telematics.utils.BackgroundLocationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.gms.wearable.BIND_LISTENER"
+                    tools:ignore="WearableBindListener" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

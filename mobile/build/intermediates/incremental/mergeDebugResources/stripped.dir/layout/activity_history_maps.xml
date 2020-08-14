@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:id="@+id/changeDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeLarge"
+            android:gravity="center"
+            android:text="Select Date"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10"
+            android:gravity="center_horizontal"
+            android:background="@color/colorBackground"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginEnd="@dimen/size_20"
+                android:visibility="gone"
+
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_18"
+                android:drawablePadding="@dimen/size_20"
+                android:gravity="center|center_vertical"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                android:text="12-07-2019"/>
+        </LinearLayout>
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".HistoryMapsActivity" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

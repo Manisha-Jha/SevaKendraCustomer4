@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+
+        <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:visibility="gone">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_rect_shape"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/devicenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="13dp"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:text="008003252264"
+                android:textColor="@color/colorAccent"
+                android:hint="Request Number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/scanmeter"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.35"
+                android:paddingTop="5dp"
+                android:layout_marginTop="7dp"
+                android:text="Scan"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg_blue"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:paddingRight="3dp" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textViewreason"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="18dp"
+                    android:text="Activity Reason"
+                    android:textColor="#003b6f"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/dropreason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:entries="@array/reason_array"
+                    android:gravity="center"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:paddingRight="4dp"
+                    android:prompt="@string/title_sict"
+                    android:spinnerMode="dropdown" />
+
+                <Spinner
+                    android:id="@+id/dropreasonre"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:entries="@array/reason_array_reconn"
+                    android:gravity="center"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:paddingRight="4dp"
+                    android:prompt="@string/title_sict"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" TF Sticker *"
+                    android:paddingLeft="16dp"
+                    android:textSize="17dp"
+                    android:textColor="#003b6f"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg"
+                android:paddingLeft="13dp"
+                android:paddingTop="8dp"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/radiostickerinstall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiostickeryes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/radio_d"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0.98"/>
+
+                    <RadioButton
+                        android:id="@+id/radiostickerno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/radio_e"
+                        android:checked="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight=".98"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:visibility="gone"
+                android:id="@+id/stickerll">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/stickernumber_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                >
+
+                <EditText
+                    android:id="@+id/stickernumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="TF Sticker number *"
+                    android:maxLength="10"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+          </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ELCB installed on site ? *"
+                android:paddingLeft="16dp"
+                android:textSize="17dp"
+                android:textColor="#003b6f"/>
+
+        </LinearLayout>
+
+    <!--  new-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:paddingTop="8dp"
+            android:weightSum="3"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radioelcbinstall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioelcbyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/radio_d"
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.98"/>
+
+                <RadioButton
+                    android:id="@+id/radioelcbno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/radio_e"
+                    android:checked="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".98"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/elcbbasedll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:visibility="gone"
+        android:orientation="vertical"
+            android:layout_marginTop="5dp"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have you installed bus-bar ?"
+            android:paddingLeft="16dp"
+            android:textSize="17dp"
+            android:textColor="#003b6f"/>
+
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg"
+        android:paddingLeft="13dp"
+        android:paddingTop="4dp"
+        android:weightSum="3"
+        android:visibility="visible">
+
+        <RadioGroup
+            android:id="@+id/radioinstalledbus"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobusyes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.98"
+                android:text="@string/radio_d" />
+
+        <RadioButton
+            android:id="@+id/radiobusno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/radio_e"
+            android:checked="true"
+            android:layout_marginLeft="6dp"
+            android:layout_weight=".98"/>
+
+            <RadioButton
+                android:id="@+id/radiobusold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/radio_old"
+                android:layout_marginLeft="6dp"
+                android:layout_weight=".98"/>
+        </RadioGroup>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/busbarinstalled_ll"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:text="- Category -"
+                android:textColor="#003b6f"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Category for Electrical usage -"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/category_view"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp">
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="6dp"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="Category"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Connection Service Required -"
+                android:textColor="@color/charcolBlack"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Connection Service Required"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <!--Title-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_ll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="4"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radiotitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_newconn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="New Cannection"
+                    android:checked="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_exist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Existing(Dormant Reconnection)"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_perma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Permanent Connection"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Temporary"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Billing Type"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender_ll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="4"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radiobilling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_pre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pre-Paid"
+                    android:checked="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Post-Paid"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Connection Service Required"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <!--Title-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/area_ll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="4"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radioarea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_areahouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Govt. House/DDA Flats/CGHS Flat"
+                    android:checked="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_areajhuggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jhuggi Jhopri Cluster"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_areaother"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Others"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Type of Premises"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <!--Title-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/premises_ll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="4"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radiopremises"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_prem_owned"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Owned"
+                    android:checked="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_prem_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Rented/Lease"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_prem_cprovided"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Company Provided"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_prem_gprovided"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Govt. Provided"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+
+                <RadioButton
+                    android:id="@+id/radio_prem_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Others"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fathersname_view"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp">
+
+            <EditText
+                android:id="@+id/fathersname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="6dp"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="Father's Name/Husband's Name "/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mothername_view"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp">
+
+            <EditText
+                android:id="@+id/mothername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="6dp"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="Mother's Maiden Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiocustomerbusll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:paddingTop="8dp"
+            android:weightSum="3"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radiocustomerbus"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiocustomerbusno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="BSES Bus-Bar"
+                    android:checked="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.98"/>
+
+                <RadioButton
+                    android:id="@+id/radiocustomerbusyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Customer Bus-Bar"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".98"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/busbarll"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="BSES Bus-bar Size"
+                android:textColor="#003b6f"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/dropbussize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.5"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:entries="@array/one_array"
+                android:gravity="center"
+                android:paddingRight="4dp"
+                android:prompt="@string/title_sict"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/busbarcustomerll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:visibility="gone"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textView3cust"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Customer Bus-bar Size"
+                android:textColor="#003b6f"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/dropbussizecust"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.5"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:entries="@array/one_array_cust"
+                android:gravity="center"
+                android:paddingRight="4dp"
+                android:prompt="@string/title_sict"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_bus"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp">
+
+                <EditText
+                    android:id="@+id/busnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="6dp"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:hint="Bus-bar number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/busbarcablesize_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/textView222"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="Bus-bar cable size "
+            android:textColor="#003b6f"
+            android:textSize="17dp" />
+
+        <Spinner
+            android:id="@+id/busbarcablesize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.5"
+            android:entries="@array/bus_array"
+            android:gravity="center"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:paddingRight="4dp"
+            android:prompt="@string/title_sict"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_drumbb"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:paddingTop="5dp" >
+
+        <EditText
+            android:id="@+id/drumnumberbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Drum number"
+            android:maxLength="20"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:textSize="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus-Bar Cable Installation Type"
+            android:paddingLeft="18dp"
+            android:textSize="17dp"
+            android:textColor="#003b6f"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg"
+        android:paddingLeft="13dp"
+        android:weightSum="3"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radiocableinstalltypebb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/ohbb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/radio_r"
+                android:checked="true"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".98"/>
+            <RadioButton
+                android:id="@+id/ugbb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/radio_s"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".98"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_lengthfrombb"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+        <EditText
+            android:id="@+id/runninglengthfrombb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="6dp"
+            android:textSize="15dp"
+            android:maxLength="5"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="Bus-Bar length from"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_lengthtobb"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/runninglengthtobb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15dp"
+            android:paddingLeft="6dp"
+            android:maxLength="5"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="Bus-Bar length to"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_cablebb"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/cablelengthbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15dp"
+            android:paddingLeft="6dp"
+            android:maxLength="5"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="Enter Bus-Bar Cable Length(meter)"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:paddingLeft="18dp"
+            android:text="- Change in Tariff Category -"
+            android:textColor="#003b6f"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Purpose/Usage of new connection *"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spin_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:entries="@array/purpose_array"
+            android:gravity="center"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:paddingRight="4dp"
+            android:prompt="@string/title_sict"
+            android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spin_usage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/usage_array"
+                android:gravity="center"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:paddingRight="4dp"
+                android:prompt="@string/title_sict"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Meter Choice"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/meterchoice_ll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="4"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radiometerchoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_meter_bses"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="BSES Meter"
+                    android:checked="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_meter_applicant"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Applicant's Meter"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Desired Load"
+                android:textColor="@color/charcolBlack"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/load_ll"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="4"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radioload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_load_kw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="KW"
+                    android:checked="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radio_load_kva"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="KVA"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/description_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Description"
+                android:maxLength="50"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/voltage_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/voltage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Voltage Level"
+                android:maxLength="30"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phase_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/phase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Phase"
+                android:maxLength="6"
+                android:inputType="number"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/panno_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/panno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="PAN Number (If available)"
+                android:maxLength="10"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/aadharnum_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/aadharnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Aadhar No."
+                android:maxLength="16"
+                android:inputType="phone"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/voter_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/voterid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Voter ID/Passport No."
+                android:maxLength="20"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="Cable Size *"
+                android:textColor="#003b6f"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/dropcablesize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.5"
+                android:entries="@array/bus_array"
+                android:gravity="center"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:paddingRight="4dp"
+                android:prompt="@string/title_sict"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_drum"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/drumnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Drum number"
+                android:maxLength="20"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:background="@drawable/bg"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cable Installation Type"
+                android:paddingLeft="18dp"
+                android:textSize="17dp"
+                android:textColor="#003b6f"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:paddingLeft="13dp"
+            android:weightSum="3"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radiocableinstalltype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/loop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/radio_q"
+                android:checked="true"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.98"/>
+            <RadioButton
+                android:id="@+id/oh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/radio_r"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".98"/>
+            <RadioButton
+                android:id="@+id/ug"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/radio_s"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".98"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_lengthfrom"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg">
+
+            <EditText
+                android:id="@+id/runninglengthfrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="6dp"
+                android:textSize="15dp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:singleLine="true"
+                android:hint="Running length from"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_lengthto"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/runninglengthto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:paddingLeft="6dp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:singleLine="true"
+                android:hint="Running length to"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_cable"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/cablelength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:paddingLeft="6dp"
+                android:maxLength="5"
+                android:focusable="false"
+                android:inputType="number"
+                android:singleLine="true"
+                android:hint="Enter Cable Length(meter) *"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_outputcable"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg">
+
+        <EditText
+            android:id="@+id/outputcablelength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="6dp"
+            android:textSize="15dp"
+            android:maxLength="5"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:hint="Output Cable"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center|center_horizontal"
+                    android:text="Terminal Seal-1 *"
+                    android:textColor="#003b6f"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/dropterminalseal1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:paddingRight="5dp" />
+
+                <Button
+                    android:id="@+id/validateseal"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Check"
+                    android:textSize="13dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_bg_blue"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="3dp" />
+
+                <ImageView
+                    android:id="@+id/validateresponse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:paddingRight="3dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center|center_horizontal"
+                    android:text="Terminal Seal-2 "
+                    android:textColor="#003b6f"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/dropterminalseal2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:maxLength="20"
+                    android:gravity="center"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="18dp"
+                    android:text="Meter Box Seal-1 "
+                    android:textColor="#003b6f"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/dropmeterseal1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:maxLength="20"
+                    android:gravity="center"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="Meter Box Seal-2 "
+                    android:textColor="#003b6f"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/dropmeterseal2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:maxLength="20"
+                    android:gravity="center"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center|center_horizontal"
+                    android:text="Bus Bar Seal-1 "
+                    android:textColor="#003b6f"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/dropbusbarseal1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:maxLength="20"
+                    android:gravity="center"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center|center_horizontal"
+                    android:text="Bus Bar Seal-2 "
+                    android:textColor="#003b6f"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/dropbusbarseal2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.5"
+                    android:maxLength="20"
+                    android:gravity="center"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <Button
+                    android:id="@+id/next2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_bg_blue"
+                    android:gravity="center"
+                    android:text="Save/Next"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>

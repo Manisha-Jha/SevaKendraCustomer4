@@ -1,0 +1,1285 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/viewA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorFieldBorder"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/ordernumber_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Request No. | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ordernumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="TSK0052624"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/stickernum_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Sticker No. | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/stickernum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="right"
+                                android:lines="2"
+                                android:text="DLTG843"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/startdateh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Appointment Date | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/startdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="11/01/2017"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/finishdate_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Re-Appointment Date | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/finishdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="11/01/2017"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/name_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Name | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/gender_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Gender | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text=""
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/fathername_h"
+                                android:layout_width="120dp"
+                                android:paddingBottom="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Father Name / Husband Name | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fathername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text=""
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/mothername_h"
+                                android:layout_width="120dp"
+                                android:paddingBottom="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Mother Maiden Name | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/mothername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text=""
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/address_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Address | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text=""
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/mobilenum_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Mobile No. | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/mobilenum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:hint="mobile number"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="10"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/email_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Email ID | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="1"
+                                android:hint="Enter email-id"
+                                android:textStyle="bold"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/accountclass_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Account Class | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/accountclass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/sanctionload_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Sanction Load | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/sanctionload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/bp_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="DSS No. | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/bp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/ca_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="CA No. | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/polenum_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Pole No. | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/polenum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/divoffice_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Division Office | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/divoffice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/requesttype_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Order Type | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/requesttype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/cablesize_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Cable Size | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cablesize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/cablelength_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Cable Length | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cablelength"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text=" "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <TextView
+                                android:id="@+id/plannergroup_h"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif"
+                                android:lines="2"
+                                android:text="Planner Group | "
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/plannergroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/alert_title_header"
+                                android:fontFamily="sans-serif-light"
+                                android:lines="2"
+                                android:text="Admin"
+                                android:textColor="@color/charcolBlack"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="0dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/description_h"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/alert_title_header"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:lines="1"
+                            android:text="Description"
+                            android:textColor="@color/charcolBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/alert_title_header"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:lines="4"
+                            android:text="this is message description"
+                            android:textColor="@color/charcolBlack"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="0dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/purpose_h"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/alert_title_header"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:lines="1"
+
+                            android:text="Purpose"
+                            android:textColor="@color/charcolBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/purpose"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/alert_title_header"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:lines="4"
+                            android:text="this is message purpose"
+                            android:textColor="@color/charcolBlack"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="0dp" >
+
+                        <TextView
+                            android:id="@+id/message_description3"
+                            android:layout_margin="10dp"
+                            android:text="this is message description"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_below="@+id/alert_title_header"
+                            android:layout_width="fill_parent"
+                            android:lines="3"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/charcolBlack"/>
+
+
+
+                    </LinearLayout>-->
+
+                    <!--<LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_rect_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="0dp" >
+
+                        <TextView
+                            android:id="@+id/message_description4"
+                            android:layout_margin="10dp"
+                            android:text="this is message description"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_below="@+id/alert_title_header"
+                            android:layout_width="fill_parent"
+                            android:lines="10"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/charcolBlack"/>
+
+
+
+                    </LinearLayout>-->
+
+
+                    <!--	<LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/button_bg_blue"
+                                android:text="Close"
+                                android:textSize="18sp"
+                                android:id="@+id/closePrompt"
+                                android:textColor="#fcffff"
+                                android:fontFamily="sans-serif-light" />
+
+
+                        </LinearLayout>-->
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/viewB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="@color/cast_expanded_controller_seek_bar_progress_background_tint_color"
+                android:orientation="horizontal"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="50dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/cancel_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_blue"
+                    android:text="EDIT KYC"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/assign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_blue"
+                    android:text="PROCEED"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\HIMANSHU\\Desktop\\SevaKendraCustomer4\\mobile\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_order_testing.xml",
+        "source": "C:\\Users\\HIMANSHU\\Desktop\\SevaKendraCustomer4\\mobile\\src\\main\\res\\layout\\activity_order_testing.xml"
+    },
+    {
+        "merged": "C:\\Users\\HIMANSHU\\Desktop\\SevaKendraCustomer4\\mobile\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_order_detail_activity.xml",
+        "source": "C:\\Users\\HIMANSHU\\Desktop\\SevaKendraCustomer4\\mobile\\src\\main\\res\\layout\\activity_order_detail_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\HIMANSHU\\Desktop\\SevaKendraCustomer4\\mobile\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\edit_order_detail_layout.xml",
+        "source": "C:\\Users\\HIMANSHU\\Desktop\\SevaKendraCustomer4\\mobile\\src\\main\\res\\layout\\edit_order_detail_layout.xml"
+    }
+]

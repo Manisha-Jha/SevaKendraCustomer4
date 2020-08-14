@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toolbar Title"
+            android:layout_gravity="left"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ctoolbar_title" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightSkyBlue">#e1f5fe</color>
+    <color name="colorFieldBorder">#BDBDBD</color>
+    <color name="charcolBlack">#212121</color>
+    <color name="lightCharcolBlack">#e0e0e0</color>
+    <color name="lightPink">#fce4ec</color>
+    <color name="lightSky">#e0f7fa</color>
+
+
+
+    <color name="charcolBlackLightx">#333333</color>
+    <color name="charcolBlackLight">#424242</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="transparent">#80000000</color>
+
+
+    <color name="colorBlue">#003b6f</color>
+    <color name="colorPrimaryDarks">#3d3d3d</color>
+    <color name="colorWhites">#fafafa</color>
+    <color name="colorPrimaryDarkss">#de0b12</color>
+    <color name="colorBlues">#030e64</color>
+    <color name="colorTransferant">#fff</color>
+    <color name="colorBackground">#d62e26</color>
+    <color name="gray">#cccccc</color>
+    <color name="dark_gray">#7e7e7e</color>
+    <color name="red">#FF0000</color>
+    <color name="textColor">#4c4c4c</color>
+    <color name="Black">#000000</color>
+    <color name="design_default_color_surface">#FFFFFF</color>
+</resources>

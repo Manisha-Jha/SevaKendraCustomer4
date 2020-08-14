@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" android:tag="layout/activity_order_testing_0">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Order time"
+            android:id="@+id/btn_open_order"
+            android:layout_margin="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Order time"
+            android:id="@+id/btn_submit_order"
+            android:layout_margin="30dp"/>
+    </LinearLayout>
+         

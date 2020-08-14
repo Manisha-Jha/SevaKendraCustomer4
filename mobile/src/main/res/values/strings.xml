@@ -1,0 +1,725 @@
+<resources>
+    <string name="app_name">BRPL DSK</string>
+    <string name="app_name_title">Seva Kendra</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Seva Kendra</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="app_company">BSES</string>
+    <string name="app_title_main">SEVA KENDRA</string>
+
+    <string name="hint_empid">Employee ID</string>
+    <string name="hint_email">Email</string>
+
+    <string name="hint_sdate">Start Date</string>
+    <string name="hint_edate">End Date</string>
+
+    <string name="hint_password">Password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_renew_password">Re-Enter New Password</string>
+    <string name="btn_sign_in">Log In</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_close">Title</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_dismiss">Dismiss</string>
+    <string name="btn_confirm_email">Confirm</string>
+    <string name="err_msg_empid">Enter your employee id</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="err_msg_re_password">Re-Enter password does not match</string>
+
+    <string name="loginscreen_welcome_snack">Welcome To BSES Intenal Messenger</string>
+    <string name="loginscreen_forgetPassword">Forget Password</string>
+    <string name="forgetPassHeading">Forget Password</string>
+    <string name="forgetPassHint">* Please enter an email id on which password will be send</string>
+    <string name="filter_title">Filter</string>
+
+    <string name="start_date_calender">Start Date:</string>
+    <string name="end_date_calender">End Date:</string>
+    <string name="title_sict">select</string>
+
+    <string name="aboutusdata"><b><i> BSES Yamuna Power Limited (BYPL)</i></b> \n BYPL distributes power to an area spread over 200 sq kms with a customer density of 7600 per sq km.</string>
+    <string name="aboutusdatarpl"><b><i>BSES Rajdhani Power Limited (BRPL)</i></b> \n BRPL distributes power to an area spread over 750 sq. km with a customer density of ~3000 per sq km.</string>
+
+
+    <string name="external_dir">GetSignature</string>
+    <string name="declaration">                           -- Declaration --\n
+                                1. That in case the applicant is not the sole owner of the premises, no objection
+                                certificate for seeking electricity connection from the co-owner has been obtained.\n
+                                2. To indemnify the licensee against all proceedings, claims, demands, costs, damages,
+                                expenses that the licensee may incur by reason of a fresh service connection given
+                                to the Applicant.\n
+                                3. That to the best of applicant?s knowledge, all electrical works done within the
+                                premises are as per Central Electricity Authority (Measures relating to Safety and
+                                Electricity Supply) Regulations, 2010 as amended from time to time.\n
+                                4. That the internal Wiring at the premises has been tested by a Licensed Electrical
+                                Contractor and the test certificate is available with the applicant: Provided that
+                                in case of Government quarters/ offices, the certificate issued by the designated
+                                officer of the Government may be accepted by the Licensee.\n
+                                5. *That the building has been constructed as per prevalent building Bye-Laws and
+                                the total height of the building\n
+                                (i) does not exceed 15 (fifteen) meters on the date
+                                of seeking service connection; Or\n
+                                (ii) is more than 15 (fifteen) meters and Fire Clearance
+                                certificate is available with the applicant.\n
+                                6. *That there is a provision of lift in premises and the applicant has obtained
+                                the lift fitness certificate from the Electrical Inspector for the lift in the said
+                                premises and the same is available with the applicant.\n
+                                7. That the applicant has applied for the correct category of tariff as per the
+                                applicable tariff schedule. For either of the following categories of connection,
+                                the applicant has the relevant documents available with him.
+                                *Applicable for selected consumer\n
+                                category\n
+                                a. Industrial Valid Industrial License/Factory License/Lal
+                                Dora Certificate in case of rural village\n
+                                b. Agricultural Consumers i. Certificate of Residence
+                                from Block Development Officer ii. No Objection Certificate from Development Commissioner/Block
+                                Development Officer Delhi Jal Board for tube wells\n
+                                c. Non-domestic for Khokhas and Temporary Structure\n
+                                i. Teh Bazaari Receipt Number ii. No Objection Certificate for Khokha/Temporary
+                                Structure for single delivery supply\n
+                                8. The above referred applicable documents/certificates indicated at various points
+                                are available with me and can be inspected by the Licensee at any time. In case
+                                of any failure to produce the same, the licensee may disconnect the connection granted
+                                owing to such failure, reluctance on my part to produce/allow the inspection of
+                                said documents/certificates.\n
+                                9. That I will provide a copy of any of above applicable documents to the licensee
+                                pursuant to request of any external government agency, judicial forum or any other
+                                authority seeking such information.\n
+                                10.That my industry/trade has not been declared to be releasing obnoxious hazardous/pollutant
+                                by any government agency and that no orders of any court or judicial authority would
+                                be breached by running of my industry/trade or granting any electricity connection
+                                to the same. The licensee is indemnified against any loss accrued by the applicant
+                                on this account.\n
+                                11.The applicant further agrees to indemnify and hold harmless, the licensee, in
+                                case of any injury or incident on account of any fault in electrical work in the
+                                premises. The licensee shall not be liable for any mishap or incident occurring
+                                at the premises to the applicant on account of any faulty/defective/inferior quality
+                                wiring at the premises for which the connection is being applied.\n
+                                12.To pay the electricity consumption bills and all other charges at the rates set
+                                out in the licensee?s Tariff Schedule and miscellaneous charges for supply as may
+                                be in force from time to time, regularly as and when the same becomes due for payment.\n
+                                13.To deposit the additional security deposit and additional service line cum development
+                                (SLD) charges, if any from time to time based on the prevailing Orders/rules, directions
+                                and Regulations of the Commission.\n
+                                14.To abide by the provisions of the Electricity Act, 2003, all applicable laws,
+                                conditions of Supply/Tariff Orders and any other Rules or Regulations as may be
+                                notified by the Commission, as applicable from time to time.\n
+                                15.That licensee shall be at liberty to adjust the electricity consumption charges
+                                due/outstanding along with any other charges against the Consumer Security Deposit
+                                paid by the Applicant, in the event of termination of the agreement prior to expiry
+                                of the contracted period or in case of any contractual default as per provisions
+                                of regulations/rules/orders/directions of the Commission.\n
+                                16.That as per Delhi Electricity Regulatory Commission (Supply Code and Performance
+                                Standards) Regulations, 2017 or as amended from time to time, I shall provide suitable
+                                and adequate space for installation of the meter/electrical equipments where the
+                                licensee may have ready access to the same.\n
+                                17.To allow clear and un-encumbered access to the meters for the purpose of meter
+                                reading and it?s checking etc.\n
+                                18.That the Applicant would let the licensee disconnect the service connection under
+                                reference, in the event of any default, non-compliance of statutory provisions and
+                                in the event of a legally binding directive by Statutory Authority (ies) to effect
+                                such an order. This shall be without prejudice to any other rights of the licensee
+                                including that of getting its payment as on the date of disconnection.\n
+                                19.All the above declaration given by the Applicant shall be construed to an Agreement
+                                between the licensee and the Applicant.\n
+
+								Note: Applicant laws but not limited to shall include the following:\n
+                                1. In case the location of the premises where connection is being sought does not
+                                conform to the minimum permissible distance from a HT Line, the applicant shall
+                                be solely llable for any direct and/or indirectly loss (including life and properly)
+                                in case of any damage/accident in the premises due to HT Line.\n
+                                2. Every charge of
+                                elecricity/ any other sum + other than such charge for elecricity due and payable
+                                to Licensee which remained unpaid by while owner/occupier of the premises/land shall
+                                be recoverable from the applicant . The said other sum would also include any bill
+                                raised towards theft of energy/misuse charges.\n
+                                3. As per Clause 61A of the Indian
+                                Elecricity Rules, 1956(as amended up to date),Earth Leakage Protective Device(ELCB)
+                                for low voltage installation of 2KW and above is mandatory and applicant has installed
+                                the ELCB in accordance with the said clause.\n
+                                4. In case of receipt of reference
+                                from the concerned land owning/ law enforcing agencies regarding sealing/demolition/vacation
+                                of premises and / or in case where any suit is filed against the license on account
+                                on giving supply to the premises, License is authorized to disconnect the supply
+                                of electricity without any further notice.\n
+                                5. The applicant shall provide adequate
+                                space of prescribed design for housing the electrical equipments etc. to be installed
+                                by the License and also provide certificate from Electrical Inspector in case of
+                                HT connection as applicable under Central Electricity Authority ( Measures relating
+                                to safety and Electrical supply) Regulations 2010.\n
+                 </string>
+
+
+
+    <string-array name="order_type">
+        <item>All</item>
+        <item>New Connection</item>
+        <item>Name Change</item>
+        <item>Load Increase</item>
+        <item>Load Reduction</item>
+        <item>Category Change(Low to High)</item>
+        <item>Category Change(High to Low)</item>
+        <item>Address Change</item>
+    </string-array>
+
+    <string-array name="order_type_sub">
+        <item>Order Type</item>
+        <item>U01</item>
+        <item>U02</item>
+        <item>U03</item>
+        <item>U04</item>
+        <item>U05</item>
+        <item>U06</item>
+        <item>U07</item>
+    </string-array>
+
+
+    <string-array name="pm_zdin">
+        <item>All</item>
+        <item>New Connection</item>
+        <item>Reconnection</item>
+    </string-array>
+    <string-array name="pm_zdin_sub">
+        <item>PM Activity</item>
+        <item>T01</item>
+        <item>T02</item>
+    </string-array>
+
+
+    <string-array name="pm_zdrm">
+        <item>All</item>
+        <item>Move Out</item>
+        <item>Demolishment</item>
+        <item>Disconnection (No Move-Out)</item>
+        <item>BSES Initiated</item>
+        <item>Enforcement  Related</item>
+        <item>Idle Meter</item>
+        <item>Meter Not At Site</item>
+        <item>Amalgamation</item>
+        <item>Interchange of Connections</item>
+        <item>Energy  Audit</item>
+    </string-array>
+    <string-array name="pm_zdrm_sub">
+        <item>PM Activity</item>
+        <item>R01</item>
+        <item>R02</item>
+        <item>R03</item>
+        <item>R04</item>
+        <item>R05</item>
+        <item>R06</item>
+        <item>R07</item>
+        <item>R08</item>
+        <item>R09</item>
+        <item>R10</item>
+    </string-array>
+
+
+
+    <string-array name="pm_zdrp">
+        <item>All</item>
+        <item>Stop Device</item>
+        <item>Device Burnt</item>
+        <item>Device Faulty</item>
+        <item>Customer Insist</item>
+        <item>Display Faulty</item>
+        <item>BSES Initiated</item>
+        <item>CT/PT Replacement</item>
+        <item>Genus Zero ID</item>
+        <item>Device Replacement, MMG LR</item>
+        <item>Meter Stolen</item>
+        <item>Postpaid to Prepaid</item>
+        <item>Replacement due to Load Change</item>
+        <item>Prepaid to Postpaid</item>
+        <item>Replacement due to Dormant Rec</item>
+        <item>Energy  Audit</item>
+        <item>Due To Enforcement</item>
+        <item>Replacement due to VDS</item>
+        <item>DT Cleaning</item>
+        <item>KVAH Meter Replacement</item>
+        <item>Dev Replacement Net Meter</item>
+        <item>Dev Replacement Solar Meter</item>
+        <item>MMG Project Activities</item>
+    </string-array>
+    <string-array name="pm_zdrp_sub">
+        <item>PM Activity</item>
+        <item>E01</item>
+        <item>E02</item>
+        <item>E03</item>
+        <item>E04</item>
+        <item>E05</item>
+        <item>E06</item>
+        <item>E07</item>
+        <item>E08</item>
+        <item>E09</item>
+        <item>E10</item>
+        <item>E11</item>
+        <item>E12</item>
+        <item>E13</item>
+        <item>E14</item>
+        <item>E15</item>
+        <item>E16</item>
+        <item>E17</item>
+        <item>E18</item>
+        <item>E19</item>
+        <item>E20</item>
+        <item>E21</item>
+        <item>E22</item>
+    </string-array>
+
+
+
+    <string-array name="pm_zmso">
+        <item>All</item>
+        <item>Meter Cabin Shifting</item>
+        <item>Meter Board Rewiring</item>
+        <item>Raising of Meter Cabin</item>
+        <item>Replacement - LT service cable</item>
+        <item>Reinstallation of Meters</item>
+    </string-array>
+    <string-array name="pm_zmso_sub">
+        <item>PM Activity</item>
+        <item>J01</item>
+        <item>J02</item>
+        <item>J03</item>
+        <item>J04</item>
+        <item>J05</item>
+    </string-array>
+
+
+
+    <string-array name="pm_zdiv">
+        <item>All</item>
+        <item>Meter Resealing  DT clean / LR</item>
+        <item>Resealing of Meter, Meter box</item>
+        <item>Resealing by O&amp;M-No Current</item>
+        <item>Meter Resealing for ENF</item>
+        <item>Meter Resealing for MR EXP</item>
+    </string-array>
+    <string-array name="pm_zdiv_sub">
+        <item>PM Activity</item>
+        <item>I08</item>
+        <item>I15</item>
+        <item>I16</item>
+        <item>J17</item>
+        <item>J18</item>
+    </string-array>
+
+    <!--Rajveer-->
+    <string name="zmso_cmplt_mtr_instll"><html>Complete Meter Installation <font color='#e61717'>*</font></html></string>
+    <string name="zmso_old_mtr_rdng"><html>Old Meter with Reading <font color='#e61717'>*</font></html></string>
+
+
+    <string-array name="reason_array">
+        <item>New Connection</item>  <!--01-->
+    </string-array>
+
+    <string-array name="reason_array_reconn">
+        <item>Re Connection</item>  <!--01-->
+    </string-array>
+
+    <string name="radio_one">Vendor</string>
+    <string name="radio_two">Installer</string>
+    <string name="hint_login">Login Id</string>
+    <string name="hint_pass">Password</string>
+    <string name="radio_a">Inside</string>
+    <string name="radio_b">Outside</string>
+    <string name="radio_c">At Common Enterance of the premise</string>
+    <string name="radio_d">Yes</string>
+    <string name="radio_e">No</string>
+    <string name="radio_old">Old</string>
+    <string name="radio_f">Ok</string>
+    <string name="radio_g">Not Ok</string>
+    <string name="radio_h">Correct</string>
+    <string name="radio_i">Not Correct</string>
+    <string name="radio_j">Fastener</string>
+    <string name="radio_k">Angle-Iron</string>
+    <string name="radio_l">Pipe</string>
+    <string name="radio_m">Gland</string>
+    <string name="radio_n">Earth-Nut</string>
+    <string name="radio_o">Thimble</string>
+    <string name="radio_p">Saddle-Clamp</string>
+    <string name="radio_q">Loop Connection</string>
+    <string name="radio_r">OH</string>
+    <string name="radio_s">UG</string>
+
+
+    <string-array name="one_array">
+
+        <item>1PH2W</item>
+        <item>1PH4W</item>
+        <item>1PH8W</item>
+        <item>3PH4W</item>
+        <item>3PH2W</item>
+        <item>3PH4W</item>
+        <item>3PH8W</item>
+    </string-array>
+
+    <string-array name="one_array_cust">
+        <item>1PH8W</item>
+        <item>3PH4W</item>
+        <item>3PH2W</item>
+        <item>3PH4W</item>
+        <item>3PH8W</item>
+    </string-array>
+
+
+    <string-array name="bus_array">
+        <item>2*10</item>
+        <item>2*25</item>
+        <item>4*25</item>
+        <item>4*50</item>
+        <item>4*150</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="purpose_array">
+            <item>- Select -</item>
+        	<item>Domestic</item>
+        	<item>Industrial</item>
+        	<item>Agriculture</item>
+        	<item>Non-Domestic</item>
+        	<item>Other Specific Purposes</item>
+    </string-array>
+
+
+    <string-array name="category_array">
+        <item>- Select -</item>
+        <item>Domestic</item>
+        <item>Domestic :Govt. Hospital_Light_Mix</item>
+        <item>CGHS(STAIR CASE)</item>
+        <item>JJ Clusters</item>
+        <item>Domestic Plot</item>
+        <item>DVB Staff Discount Tariff</item>
+        <item>CGHS(SDP)</item>
+        <item>DMRC</item>
+        <item>HOSPITAL-MHLT(DOM-TARIFF)</item>
+        <item>LIP ON 11KV</item>
+        <item>MLHT ON 11 KV</item>
+        <item>NDLT-(SDP ON 11KV)</item>
+        <item>Railway Traction Other Than DMRC</item>
+        <item>SIP -(SDP ON 11KV)</item>
+        <item>MLHT(DOM-TARIFF)</item>
+        <item>Agriculture</item>
+        <item>LIP ON 400 VOLT</item>
+        <item>MLHT ON 400 VOLT</item>
+        <item>Mushroom Cultivation</item>
+        <item>Non Domestic</item>
+        <item>Small Dairy</item>
+        <item>Signals and Blinkers</item>
+        <item>Industrial</item>
+        <item>Street Light Metered</item>
+        <item>Street Light</item>
+        <item>Threshers</item>
+        <item>Delhi Jal Board</item>
+        <item>Delhi International Airport Limited</item>
+    </string-array>
+
+    <string-array name="category_array_sub">
+        <item>000</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>200</item>
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
+        <item>240</item>
+        <item>250</item>
+        <item>260</item>
+        <item>270</item>
+        <item>280</item>
+        <item>290</item>
+        <item>300</item>
+        <item>310</item>
+        <item>320</item>
+        <item>330</item>
+        <item>340</item>
+        <item>350</item>
+        <item>360</item>
+        <item>370</item>
+    </string-array>
+
+
+
+    <string-array name="usage_array">
+
+        <item>- Select -</item>
+        <item>Domestic lighting</item>
+        <item>Common meter - compound lighting_portico_staircase lighting_lifts_water pump_fire-fighting equipment in residential complexes</item>
+        <item>Co-operative group housing</item>
+       	<item>Domestic farmhouse - available for loads up to 21 kW to farmho uses for bonafide domestic self use and bounded farm houses having minimum 50% of the total land for agriculture_vegetable cultivation</item>
+        <item>Professionals like architects,engineers,doctors,lawyers,CAs with an area upto a maximum of 50 sq meters for carrying out professional work</item>
+      	<item>Erstwhile DVB Staff-S1 employed,S2 employed,S3 employed,DS1,DS2,DS3,DS4,DS5,DS6,DS7</item>
+        <item>Industry in conforming areas</item>
+        <item>Industry in non-conforming area,urban area</item>
+        <item>Industry in rural area</item>
+        <item>Tube well for irrigation</item>
+        <item>Threshing and kutti-cutting in conjunction with pumping load for irrigation purposes</item>
+        <item>Lighting in kothara</item>
+        <item>Mushroom cultivation</item>
+        <item>Shops,Commercial complexes,Offices</item>
+       	<item>Khokas,kiosks,temporary structures such as pan shops</item>
+      	<item>Hotels,restaurants,ice-cream parlours,eateries,inns,Guest houses</item>
+       	<item>Auditoriums,cinema,libraries</item>
+     	<item>ATMs,Banks</item>
+       	<item>Petrol pumps</item>
+        <item>Farmhouses used for commercial activities such as marriage,parties etc.</item>
+        <item>Cattle farms, fisheries, piggeries, poultry farms, floriculture, horticulture, plant nursery</item>
+       	<item>Hostels,schools,colleges,Hospitals,nursing homes,diagnostic centres (other than those run by MCD,GoNCTD)</item>
+       	<item>Household Industry</item>
+       	<item>Any other purpose,use not indicated in any list</item>
+        <item>Places of worship - temple,mosque,gurudwara,Church</item>
+       	<item>Hostels of recognized,aided institutions of MCD,GoNCTD</item>
+        <item>Dispensary,hospitals,public libraries,working womens hostel,orphanage,charitable homes run by MCD,GoNCTD</item>
+       	<item>Health centres approved by Department of Health, GoNCTD for providing charitable service only</item>
+        <item>Recognized centres for welfare of blind, deaf and dumb,spastic children, physically handicapped persons as approved by GoNCTD</item>
+        <item>Chesire homes,orphanage</item>
+       	<item>Electric crematorium</item>
+
+    </string-array>
+
+
+
+    <string-array name="usage_array_sub">
+
+        <item>0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+        <item>1.5</item>
+        <item>1.6</item>
+        <item>2.1</item>
+        <item>2.2</item>
+        <item>2.3</item>
+        <item>3.1</item>
+        <item>3.2</item>
+        <item>3.3</item>
+        <item>3.4</item>
+        <item>4.1</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.8</item>
+        <item>4.9</item>
+        <item>4.10</item>
+        <item>4.11</item>
+        <item>5.1</item>
+        <item>5.2</item>
+        <item>5.3</item>
+        <item>5.4</item>
+        <item>5.5</item>
+        <item>5.6</item>
+        <item>5.7</item>
+
+    </string-array>
+
+
+    <string-array name="usage_array0">
+        <item>- Select -</item>
+    </string-array>
+
+    <string-array name="usage_array_sub0">
+        <item>0</item>
+    </string-array>
+
+
+
+    <string-array name="usage_array1">
+    <item>- Select -</item>
+    <item>Domestic lighting</item>
+    <item>Common meter - compound lighting_portico_staircase lighting_lifts_water pump_fire-fighting equipment in residential complexes</item>
+    <item>Co-operative group housing</item>
+    <item>Domestic farmhouse - available for loads up to 21 kW to farmho uses for bonafide domestic self use and bounded farm houses having minimum 50% of the total land for agriculture_vegetable cultivation</item>
+    <item>Professionals like architects,engineers,doctors,lawyers,CAs with an area upto a maximum of 50 sq meters for carrying out professional work</item>
+    <item>Erstwhile DVB Staff-S1 employed,S2 employed,S3 employed,DS1,DS2,DS3,DS4,DS5,DS6,DS7</item>
+    </string-array>
+
+    <string-array name="usage_array_sub1">
+        <item>0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+        <item>1.5</item>
+        <item>1.6</item>
+    </string-array>
+
+
+
+    <string-array name="usage_array2">
+        <item>- Select -</item>
+        <item>Industry in conforming areas</item>
+        <item>Industry in non-conforming area,urban area</item>
+        <item>Industry in rural area</item>
+    </string-array>
+
+
+
+    <string-array name="usage_array_sub2">
+        <item>0</item>
+        <item>2.1</item>
+        <item>2.2</item>
+        <item>2.3</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="usage_array3">
+        <item>- Select -</item>
+        <item>Tube well for irrigation</item>
+        <item>Threshing and kutti-cutting in conjunction with pumping load for irrigation purposes</item>
+        <item>Lighting in kothara</item>
+        <item>Mushroom cultivation</item>
+    </string-array>
+
+
+
+    <string-array name="usage_array_sub3">
+        <item>0</item>
+        <item>3.1</item>
+        <item>3.2</item>
+        <item>3.3</item>
+        <item>3.4</item>
+    </string-array>
+
+
+
+
+    <string-array name="usage_array4">
+        <item>- Select -</item>
+        <item>Shops,Commercial complexes,Offices</item>
+        <item>Khokas,kiosks,temporary structures such as pan shops</item>
+        <item>Hotels,restaurants,ice-cream parlours,eateries,inns,Guest houses</item>
+        <item>Auditoriums,cinema,libraries</item>
+        <item>ATMs,Banks</item>
+        <item>Petrol pumps</item>
+        <item>Farmhouses used for commercial activities such as marriage,parties etc.</item>
+        <item>Cattle farms, fisheries, piggeries, poultry farms, floriculture, horticulture, plant nursery</item>
+        <item>Hostels,schools,colleges,Hospitals,nursing homes,diagnostic centres (other than those run by MCD,GoNCTD)</item>
+        <item>Household Industry</item>
+        <item>Any other purpose,use not indicated in any list</item>
+    </string-array>
+
+
+
+    <string-array name="usage_array_sub4">
+        <item>0</item>
+        <item>4.1</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.8</item>
+        <item>4.9</item>
+        <item>4.10</item>
+        <item>4.11</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="usage_array5">
+
+        <item>- Select -</item>
+        <item>Places of worship - temple,mosque,gurudwara,Church</item>
+        <item>Hostels of recognized,aided institutions of MCD,GoNCTD</item>
+        <item>Dispensary,hospitals,public libraries,working womens hostel,orphanage,charitable homes run by MCD,GoNCTD</item>
+        <item>Health centres approved by Department of Health, GoNCTD for providing charitable service only</item>
+        <item>Recognized centres for welfare of blind, deaf and dumb,spastic children, physically handicapped persons as approved by GoNCTD</item>
+        <item>Chesire homes,orphanage</item>
+        <item>Electric crematorium</item>
+
+    </string-array>
+
+
+
+    <string-array name="usage_array_sub5">
+        <item>0</item>
+        <item>5.1</item>
+        <item>5.2</item>
+        <item>5.3</item>
+        <item>5.4</item>
+        <item>5.5</item>
+        <item>5.6</item>
+        <item>5.7</item>
+
+    </string-array>
+
+
+
+
+    <string-array name="document_list">
+        <item>- Select -</item>
+        <item>NOC Guarantor/Provider/Image</item>
+        <item>Electoral identity card</item>
+        <item>Passport</item>
+        <item>Driving licence</item>
+        <item>Ration card having photograph</item>
+        <item>Pan card</item>
+        <item>Adhar card</item>
+        <item>Photo identity card issue by any goverment agency</item>
+        <item>Certificate of incorporation/registration issued by Register</item>
+        <item>Certified copy of title deed</item>
+        <item>Registered Conveyance Deed</item>
+        <item>GPA</item>
+        <item>Possession letter</item>
+        <item>Rent receipt/Lease agreement along with no objection certificate and proof ownership of landlord</item>
+        <item>Last paid bill copy (applicable will be processed only after clearance of outstanding dues )</item>
+
+    </string-array>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string name="loading">Loading...</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="tasks">Tasks</string>
+    <string name="history">History</string>
+    <string name="assign_tasks">Assign Tasks</string>
+    <string name="add_user">Add User</string>
+    <string name="user_list">User List</string>
+    <string name="live_tracking">Live Tracking</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="request_number">Request Number</string>
+    <string name="request_type">Request Type</string>
+    <string name="create_task">Create Task</string>
+
+</resources>
